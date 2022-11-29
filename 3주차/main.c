@@ -78,6 +78,6 @@ void main()
 
 	float moonweight = weight * 0.17;
 	printf("달에서의 몸무게는 %fkg입니다.", moonweight);
-	
+
 }
 //Programming_6: 실수형 변수 받아 달에서의 몸무게 계산하는 예제

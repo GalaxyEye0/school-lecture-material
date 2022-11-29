@@ -43,4 +43,3 @@ void main()
 	printf("7 / 8 = %d\n", 7 / 8);
 }
 //Programming_5: 사칙 연산 결과 출력하기
-
