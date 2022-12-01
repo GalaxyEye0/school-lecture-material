@@ -156,3 +156,68 @@ void main(){
   }
 }
 // 6. 반복 및 제어문을 이용한 탈출 조건 있으면서 잘못된 입력 시 재입력 하는 조건이 있는 가위바위보
+
+
+int get_arrNum(int arr[], int n){
+  for(int i = 0; i < n; i++){
+    scanf("%d", &arr[i]);
+  }
+
+  return 0;
+} // 배열을 입력하는 함수
+
+int return_max(int arr[], int n){
+  int tmp = arr[0];
+  for(int i = 0; i < n; i++){
+    if(arr[i+1] > arr[i])
+      tmp = arr[i+1];
+  }
+
+  return tmp;
+} // 배열 요소 중 최댓값을 찾는 함수
+
+void main(){
+  int n = 0;
+  int *arr;
+  printf("배열의 사이즈를 입력하세요 : (최대99)");
+  scanf("%d", &n);
+
+  arr = (int*)malloc(sizeof(int)*n); //core dumped 오류 방지
+  get_arrNum(arr, n);
+
+  printf("최댓값 : %d", return_max(arr, n));
+}
+ // 7. 함수를 활용한 최댓값 비교 프로그램
+
+int main(void){
+  int n = 0;
+  int com_n = 0;
+  char c;
+  srand(time(NULL));
+  
+  while(1){
+    printf("앞면 또는 뒷면(1 또는 0) : ");
+    scanf("%d", &n);
+
+    com_n = rand()%1;
+    
+    if(com_n == n){
+      printf("맞았습니다.\n");
+    }
+
+    else if(com_n != n){
+      printf("땡!\n");
+    }
+
+    getchar();
+    
+    printf("계속 하시겠습니까?(y 또는 n) : ");
+    scanf("%c", &c);
+
+    if(c == 'y')
+      continue;
+    else if(c == 'n')
+      printf("프로그램 종료");
+      return 0;
+  }
+} // 8. 랜덤함수를 이용한 동전 뒤집기 게임
