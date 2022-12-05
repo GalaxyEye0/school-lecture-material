@@ -199,7 +199,7 @@ int main(void){
     printf("앞면 또는 뒷면(1 또는 0) : ");
     scanf("%d", &n);
 
-    com_n = rand()%1;
+    com_n = rand()%2;
     
     if(com_n == n){
       printf("맞았습니다.\n");
