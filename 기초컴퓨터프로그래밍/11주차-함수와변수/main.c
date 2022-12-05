@@ -8,8 +8,7 @@ void add();
 void minus();
 
 int main1(void) {
-	do
-	 {
+	do {
 		printf("\n연산을 입력하시오: ");
 		scanf_s("%d%d", &x, &y);
 
@@ -109,8 +108,7 @@ int main3(void) {
 }
 
 
-int check()
-{
+int check() {
 	if (password == 1234) {
 		printf("로그인 성공!!\n");
 		return 0;
@@ -127,3 +125,101 @@ int check()
 }
 //Programming_3: 비밀번호 횟수 초과 출력 예제 횟수 카운드 예제
 
+int get_random() {
+	static int a = 0;
+	static int b;
+
+	if (a == 0) {
+		b = 0;
+		a++;
+		return b;
+	}
+	else {
+		b = rand() % RAND_MAX;
+		return b;
+	}
+}
+
+int main4(void) {
+	srand((unsigned)time(NULL));
+
+	for (int i = 0; i < 4; i++) {
+		int c = get_random();
+
+		if (c == 0)
+			printf("초기화 실행\n");
+		else
+			printf("%d\n", c);
+	}
+	return 0;
+}
+//Programming_4: 정적 변수를 이용해서 초기화를 딱 한 번만 하는 예제
+
+int z;
+int count = 1;
+int main5(void) {
+	int count_num;
+
+	printf("정수를 입력하시오: ");
+	scanf_s("%d", &z);
+	count_num = Divide();
+	printf("자리수의 갯수: %d", count);
+
+}
+
+int Divide() {
+	do {
+		z = (z / 10);
+		count++;
+	} while (z > 10);
+	return count;
+}
+//Programming_5: 주어진 정수의 자릿수를 출력하는 예제
+
+int z;
+int sum = 0;
+int plus = 0;
+int Divide();
+
+int main6(void) {
+	int Total_sum;
+
+	printf("정수를 입력하시오: ");
+	scanf_s("%d", &z);
+	Total_sum = Divide();
+	printf("자리수의 합: %d", sum);
+
+}
+
+int Divide() {
+	do {
+		plus = (z % 10);
+		sum += plus;
+		z = (z / 10);
+	} while (z >= 10);
+	plus = (z % 10);
+	sum += plus;
+	z = (z / 10);
+
+}
+//Programming_6: 각 자리수의 합계 구하는 예제
+
+int fib(int t) {
+	if (t == 0)
+		return 0;
+	else if (t == 1)
+		return 1;
+	else
+		return fib(t - 1) + fib(t - 2);
+}
+
+int main7(void) {
+	int a;
+	printf("피보나치 수열의 계산 개수를 입력하세요: ");
+	scanf_s("%d", &a);
+	for (int i = 0; i < a; i++) {
+		printf("fib(%d) = %d\n", i, fib(i));
+	}
+	return 0;
+}
+//Programming_7: 피보나치 수열 예제
