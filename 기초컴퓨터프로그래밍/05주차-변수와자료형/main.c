@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void main()
-{
+void main1() {
 	float a;
 	printf("실수를 입력하시오: ");
 	scanf_s("%f", &a);
@@ -10,8 +9,7 @@ void main()
 } 
 //Programming_1: 소수점 표기 방법과 지수 표기 방법 예제
 
-void main()
-{
+void main2() {
 	int a;
 	printf("16진수 정수를 입력하시오: ");
 	scanf_s("%x", &a);
@@ -21,8 +19,7 @@ void main()
 }
 //Programming_2: 16진수를 입력받아 8진수, 10진수, 16진수로 변환하는 예제
 
-void main()
-{
+void main3() {
 	int x, y, temp;
 	
 	x = 10;
@@ -37,8 +34,7 @@ void main()
 }
 //Programming_3: int 형 변수 서로 교환하는 예제
 
-void main()
-{
+void main4() {
 	double A, B, H, V;
 	printf("상자의 가로 세로 높이를 한번에 입력: ");
 	scanf_s("%lf %lf %lf", &A, &B, &H);
@@ -52,8 +48,7 @@ void main()
 
 #define c 3.33058
 
-void main()
-{
+void main5() {
 	float a, b;
 	printf("평을 입력하세요: ");
 	scanf_s("%f", &a);
@@ -64,8 +59,7 @@ void main()
 }
 //Programming_5: 평을 제곱미터로 변환하는 예제
 
-void main()
-{
+void main6() {
 	float a, b;
 	a = 3.32e-3;
 	b = 9.76e-8;
@@ -74,8 +68,7 @@ void main()
 }
 //Programming_6: 지수표기법을 실수형으로 초기화하는 예제
 
-void main()
-{
+void main7() {
 	double m, v, e;
 	printf("질량(kg): ");
 	scanf_s("%lf", &m);
@@ -85,8 +78,7 @@ void main()
 }
 //Programming_7: 운동에너지 계산하는 예제
 
-void main()
-{
+void main8() {
 	int input;
 	printf("아스키코드를 입력하시오: ");
 	scanf_s("%d", &input);
@@ -95,15 +87,13 @@ void main()
 }
 //Programming_8: 아스키 코드 입력하여 변환하는 예제
 
-void main()
-{
+void main9() {
 	char beep = '\a';
 	printf("화재가 발생하였습니다.%c", beep);
 }
 //Programming_9: 아스키 코드로 경보음이 울리는 예제
 
-void main()
-{
+void main10() {
 	printf("\"ASCII code\", \'A\', \'B\', \'C\' \n\\t \\a \\n");
 }
 //Programming_10: 역슬래시를 활용한 다양한 이스케이프 문자

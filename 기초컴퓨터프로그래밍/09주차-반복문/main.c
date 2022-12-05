@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+void main1(){
     int a;
 	scanf_s("%d", &a);
 	for (a; a >= 0; a--) {
@@ -12,7 +12,7 @@ void main(){
 } 
 //Programming_1: 변수의 값이 0이 될때까지 감소시키고 끝나면 벨소리를 내는 예제
 
-void main() {
+void main2() {
 	int i;
 	int sum = 0;
 	for (i = 1; i <= 100; i++) {
@@ -23,7 +23,7 @@ void main() {
 } 
 //Programming_2: 1부터 100사이의 모든 3의 배수의 합을 계산하는 예제
 
-void main() {
+void main3() {
 	int a;
 	scanf_s("%d", &a);
 	printf("약수: ");
@@ -36,7 +36,7 @@ void main() {
 //Programming_3: 입력한 수의 모든 약수를 출력하는 프로그램
 
 
-void main() {
+void main4() {
 	int space, n;
 	scanf_s("%d", &n);
 
@@ -52,7 +52,7 @@ void main() {
 } 
 //Programming_4: 오른쪽으로 치우친 직각삼각형 출력하는 프로그램
 
-void main() {
+void main5() {
 	int n;
 	scanf_s("%d", &n);
 	for (int i = 2; i < n+2; i++) {
@@ -64,7 +64,7 @@ void main() {
 } 
 //Programming_5:  숫자 쌓는 직각삼각형 출력하기
 
-void main() {
+void main6() {
 	char ch = NULL;
 	int a, b;
 	do {
@@ -122,7 +122,7 @@ void main() {
 } 
 //Programming_6: 정수 계산기 예제
 
-void main() {
+void main7() {
     long counter = 0;
     long num;
 
@@ -145,7 +145,7 @@ void main() {
 } 
 //Programming_7: 소수 구하기 에제 (매우 중요!!)
 
-void main(void) {
+void main8(void) {
     int sum = 0;
 	
 	for(int i = 1; ; i++) {

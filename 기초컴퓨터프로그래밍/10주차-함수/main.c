@@ -4,7 +4,7 @@
 
 double square(double x);
 
-int main_1(void) {
+int main1(void) {
 	double x;
 	
 	printf("정수를 입력하시오: ");
@@ -22,7 +22,7 @@ double square(double x) {
 
 int check_alpha(char ch);
 
-int main_2(void) {
+int main2(void) {
 	char ch = '\0';
 	int num = 0;
 
@@ -51,7 +51,7 @@ double cal_area(double R);
 double R;
 double num;
 
-int main_3(void) {
+int main3(void) {
 	
 	printf("원의 반지를 입력하시오: ");
 	scanf_s("%lf", &R);
@@ -69,7 +69,7 @@ int half_up(double x);
 int b;
 double x;
 
-int main_4(void) {
+int main4(void) {
 	printf("실수를 입력하시오: ");
 	scanf_s("%lf", &x);
 
@@ -90,7 +90,7 @@ int sign(int x);
 
 int x;
 
-int main_5(void) {
+int main5(void) {
 
 	printf("정수를 입력하시오: ");
 	scanf_s("%d", &x);
@@ -138,7 +138,7 @@ int sign(int x) {
 
 void random();
 
-int main_6(void) {
+int main6(void) {
 
 	random();
 }
@@ -173,7 +173,7 @@ void simulation(int vNum, int iNum, char c){
 			break;
 	}
 }
-int main_7(void) {
+int main7(void) {
 	int vNum = 0;
 	int iNum = 0;
 	char c;
@@ -188,7 +188,7 @@ void f_rand(){
   printf("%lf ", num/RAND_MAX);
 }
 
-int main_8() {
+int main8() {
 	int vNum = 0;
 	int iNum = 0;
 	char c;

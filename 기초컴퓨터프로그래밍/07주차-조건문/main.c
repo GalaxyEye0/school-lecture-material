@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void main() { 
+void main1() { 
 	char ch;
 	printf("문자를 입력하세요: ");
 	scanf_s("%c", &ch);
@@ -24,7 +24,7 @@ void main() {
 }
 //Programming_1: 알파벳 모음과 자음을 switch 문으로 구분하는 예제
 
-void main() {
+void main2() {
 	int input1 = 0, input2 = 0;
 	printf("정수를 입력하시오: ");
 	scanf_s("%d", &input1);
@@ -38,7 +38,7 @@ void main() {
 }
 //Programming_2: 2개의 정수를 받아 처음 받은 수의 약수인지 확인하는 예제
 
-void main() {
+void main3() {
 	int a, b, c;
 	printf("3개의 정수를 입력하세요: ");
 	scanf_s("%d %d %d", &a, &b, &c);
@@ -52,7 +52,7 @@ void main() {
 }
 //Programming_3: 3개의 정수를 받아 가장 작은 값을 출력하는 예제
 
-void main() {
+void main4() {
 	int AI_NUM, HU_NUM = 0;
 
 	AI_NUM = rand() % 3 + 1;
@@ -102,7 +102,7 @@ void main() {
 }
 //Programming_4: 컴퓨터와 가위 바위 보 하는 프로그램
 
-void main() {
+void main5() {
     int cm, year;
 	printf("키를 입력하시오(cm): ");
 	scanf_s("%d", &cm);
@@ -116,7 +116,7 @@ void main() {
 }
 //Programming_5: 키와 나이를 입력받아 롤러코스터를 탑승 가능 유뮤 출력하는 예제
 
-void main() {
+void main6() {
 	int month;
 
 	printf("월번호를 입력하시오: ");
@@ -168,7 +168,7 @@ void main() {
 }
 //Programming_6: 월 숫자를 입력받아 영어단어로 출력하는 예제
 
-void main() {
+void main7() {
     int cm, weight;
 	int st_weight;
 
@@ -187,7 +187,7 @@ void main() {
 }
 //Programming_7: 표준체중 계산하여 과체중, 저체중, 표준체중 출력하는 예제
 
-void main() {
+void main8() {
 	float x = 0.0;
 
 	printf("x의 값을 입력하시오: ");
@@ -200,7 +200,7 @@ void main() {
 }
 //Programming_8: x값을 받아 함수 값을 출력하는 예제
 
-void main() {
+void main9() {
 	int x = 0, y = 0, S_1 = 0, S_2 = 0, S_3 = 0, S_4 = 0;
 	printf("X좌표를 입력하시오: ");
 	scanf_s("%d", &x);

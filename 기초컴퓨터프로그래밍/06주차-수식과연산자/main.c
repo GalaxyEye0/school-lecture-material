@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main() {
+void main1() {
     int a = 0, b = 0;
 	printf("2개의 정수를 입력하시오: ");
 	scanf_s(" %d %d", &a, &b);
@@ -8,7 +8,7 @@ void main() {
 }
 //Programming_1: 정수를 입력 받아 몫과 나머지를 계산하는 예제
 
-void main() {
+void main2() {
 	double a=0.0, b=0.0;
 	printf("실수를 2개 입력하시오: ");
 	scanf_s("%lf %lf", &a, &b);
@@ -17,7 +17,7 @@ void main() {
 }
 //Programming_2: 2개의 더블형 실수를 읽어 사칙연산하는 예제
 
-void main1() { // IF문을 활용한 예제
+void main3() { // IF문을 활용한 예제
 	int a = 0, b = 0, c = 0;
 
 	printf("3개의 정수를 입력하시오: ");
@@ -33,7 +33,7 @@ void main1() { // IF문을 활용한 예제
 		printf("최대값: &d", c);
 }
 
-void main2(){ 
+void main3_1(){ 
     int a, b, c, max_a, max_b;
 
 	printf("3개의 정수를 입력하시오: ");
@@ -45,7 +45,7 @@ void main2(){
 }
 //Programming_3: 3개의 정수 값을 입력 받아서 최대 값을 출력하는 예제
 
-void main() {
+void main4() {
     int cm = 0, feet;
 
 	printf("키를 입력하시오(cm): ");
@@ -57,7 +57,7 @@ void main() {
 }
 //Programming_4: cm를 피트와 인치로 변환하는 예제
 
-void main() {
+void main5() {
 	int a=0;
 	printf("정수를 입력하시오: ");
 	scanf_s("%d", &a);
@@ -65,7 +65,7 @@ void main() {
 }
 //Programming_5: 100보다 작은 정수 십의 자리와 일의 자리로 분해하는 예제
 
-void main() {
+void main6() {
 	int a = 0;
 	printf("정수를 입력하시오: ");
 	scanf_s("%d", &a);
@@ -75,7 +75,7 @@ void main() {
 }
 //Programming_6: 2의 보수를 출력하는 예제
 
-void main() {
+void main7() {
 	int a = 0, b =0;
 	printf("정수를 입력하시오: ");
 	scanf_s("%d", &a);
@@ -88,7 +88,7 @@ void main() {
 //Programming_7: 비트연산자 << 활용해 2를 여러 번 곱한 수 출력하는 예제
 
 #define pi 3.141592
-void main() {
+void main8() {
 	float r, s, v;
 	printf("구의 반지름을 입력하시오: ");
 	scanf_s("%f", &r);
@@ -101,7 +101,7 @@ void main() {
 //Programming_8: 구의 표면적과 체적을 계산하는 예제
 
 
-void main() {
+void main9() {
 	float stick_h, shadow_h, piramid_L, piramid_h;
 	printf("지팡이의 높이를 입력하시오: "); 
 	scanf_s("%f", &stick_h);
@@ -114,7 +114,7 @@ void main() {
 }
 //Programming_9: 닮음을 이용해 피라미드 높이 구하는 예제
 
-void main() {
+void main10() {
     int x = 0, y = 0, S_1 = 0, S_2 = 0, S_3 = 0, S_4 = 0;
 	printf("X좌표를 입력하시오: ");
 	scanf_s("%d", &x);
